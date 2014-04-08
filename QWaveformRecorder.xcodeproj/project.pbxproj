@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D95BB0418F3DCF200EE9672 /* QWaveformPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D95BB0318F3DCF200EE9672 /* QWaveformPlayer.m */; };
 		6D95E01718F2838E0011833D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D95E01618F2838E0011833D /* Foundation.framework */; };
 		6D95E01918F2838E0011833D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D95E01818F2838E0011833D /* CoreGraphics.framework */; };
 		6D95E01B18F2838E0011833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D95E01A18F2838E0011833D /* UIKit.framework */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D95BB0218F3DCF200EE9672 /* QWaveformPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWaveformPlayer.h; sourceTree = "<group>"; };
+		6D95BB0318F3DCF200EE9672 /* QWaveformPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWaveformPlayer.m; sourceTree = "<group>"; };
+		6D95BB0518F3E07500EE9672 /* QWaveformDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWaveformDefine.h; sourceTree = "<group>"; };
 		6D95E01318F2838E0011833D /* QWaveformRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWaveformRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D95E01618F2838E0011833D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D95E01818F2838E0011833D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,6 +178,9 @@
 			children = (
 				6D95E04E18F28C130011833D /* QWaveformRecorder.h */,
 				6D95E04F18F28C130011833D /* QWaveformRecorder.m */,
+				6D95BB0218F3DCF200EE9672 /* QWaveformPlayer.h */,
+				6D95BB0318F3DCF200EE9672 /* QWaveformPlayer.m */,
+				6D95BB0518F3E07500EE9672 /* QWaveformDefine.h */,
 			);
 			path = QWaveformRecorder;
 			sourceTree = "<group>";
@@ -277,6 +284,7 @@
 				6D95E02718F2838E0011833D /* AppDelegate.m in Sources */,
 				6D95E02318F2838E0011833D /* main.m in Sources */,
 				6D95E05318F29EDC0011833D /* MainViewController.m in Sources */,
+				6D95BB0418F3DCF200EE9672 /* QWaveformPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +483,7 @@
 				6D95E04118F2838E0011833D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D95E04218F2838E0011833D /* Build configuration list for PBXNativeTarget "QWaveformRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +492,7 @@
 				6D95E04418F2838E0011833D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

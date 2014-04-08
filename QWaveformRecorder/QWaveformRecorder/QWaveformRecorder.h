@@ -8,10 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
-
-#define SOUND_METER_COUNT       440
-#define WAVE_UPDATE_FREQUENCY   0.272// 60s/ (SOUND_METER_COUNT/2)
-#define MAX_LENGTH_OF_WAVE 50
+#import "QWaveformDefine.h"
 
 @protocol QWaveformRecorderDelegate;
 
@@ -32,6 +29,7 @@
 @property (nonatomic) BOOL isMeterRight;
 
 - (void)startForFilePath:(NSString *)filePath;
+- (void)stopRecording;
 - (void)cancelRecording;
 - (BOOL)recording;
 

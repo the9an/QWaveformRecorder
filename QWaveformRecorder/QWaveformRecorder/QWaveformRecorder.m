@@ -128,16 +128,9 @@
     [self addSoundMeterItem:[_recorder averagePowerForChannel:0]];
 }
 
-- (void)cancelRecording
+- (void)stopRecording
 {
-    [self setNeedsDisplay];
-    [_timer invalidate];
-    
-    if (self.delegate && ([self.delegate respondsToSelector:@selector(QWaveformRecorderDidCancelRecord:)])) {
-        [self.delegate QWaveformRecorderDidCancelRecord:self];
-    }
-    
-    [_recorder stop];
+    [self commitRecording];
 }
 
 - (void)commitRecording
@@ -150,6 +143,19 @@
     }
     
     [self setNeedsDisplay];
+}
+
+- (void)cancelRecording
+{
+    [self setNeedsDisplay];
+    [_timer invalidate];
+    
+    if (self.delegate && ([self.delegate respondsToSelector:@selector(QWaveformRecorderDidCancelRecord:)])) {
+        [self.delegate QWaveformRecorderDidCancelRecord:self];
+    }
+    
+    [_recorder stop];
+    unlink([_recorderFilePath UTF8String]);
 }
 
 #pragma mark - Sound meter operations
